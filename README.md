@@ -1,49 +1,75 @@
-# AndroidAppGenerator
-Certainly! Here's the information presented in Markdown format:
+Android Boilerplate [![Build Status](https://travis-ci.org/hitherejoe/Android-Boilerplate.svg?branch=master)](https://travis-ci.org/hitherejoe/Android-Boilerplate)
+===================
 
-```markdown
-# Android App Generator Tool for Termux
+<p align="center">
+    <img src="images/ic_web.png" alt="Web Launcher"/>
+</p>
 
-## Dependencies
 
-1. **Python:**
-   ```bash
-   pkg install python
-   ```
+A simple boilerplate application which demonstrates the downloading, persisting and syncing of data - displayed with a common layout used amongst applications.
 
-2. **Requests Module:**
-   ```bash
-   pip install requests
-   ```
+The project is setup using:
 
-3. **Zipfile Module:**
-   ```bash
-   pip install zipfile
-   ```
+- Functional tests with [Espresso](http://google.github.io/android-testing-support-library/docs/espresso)
+- Unit tests with [Mockito](http://mockito.org/) and [Robolectric](http://robolectric.org/) 
+- [RxJava](https://github.com/ReactiveX/RxJava) and [RxAndroid](https://github.com/ReactiveX/RxAndroid) 
+- [Retrofit](http://square.github.io/retrofit/) and [OkHttp](https://github.com/square/okhttp)
+- [Dagger 2](http://google.github.io/dagger/)
+- [Butterknife](https://github.com/JakeWharton/butterknife)
+- [Timber] (https://github.com/JakeWharton/timber)
+- [Mockito](http://mockito.org/)
+- [Glide](https://github.com/bumptech/glide)
 
-## Run the Tool
+<p align="center">
+    <img src="images/device.png" alt="Web Launcher"/>
+</p>
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/thisizasif/AndroidAppGenerator.git
-   ```
 
-2. **Navigate to the Tool Directory:**
-   ```bash
-   cd AndroidAppGenerator
-   ```
+Requirements
+------------
 
-3. **Run the Script:**
-   ```bash
-   python main.py
-   ```
+ - [Android SDK](http://developer.android.com/sdk/index.html).
+ - Android [6.0 (API 23) ](http://developer.android.com/tools/revisions/platforms.html#6.0).
+ - Android SDK Tools
+ - Android SDK Build tools 23.0.2
+ - Android Support Repository
+ - Android Support library
 
-   Follow the prompts to enter the package name and app name.
+Building
+--------
 
-4. **Provide Storage Access (if prompted):**
-   If the script requires storage access, grant permission when prompted.
+To build, install and run a debug version, run this from the root of the project:
 
-*Note: Replace `https://github.com/username/AndroidAppGenerator.git` with the actual URL of your repository.*
+    ./gradlew installRunDebug
+    
+Testing
+--------
 
-After running these steps, the script should execute in Termux, allowing you to generate an Android app based on the provided template. Let me know if you encounter any issues or if there's anything else I can assist you with!
-```
+For Android Studio to use syntax highlighting for Automated tests and Unit tests you **must** switch the Build Variant to the desired mode.
+
+To run **pmd**, **checkstyle** and **findbug** checks on your machine:
+
+    ./gradlew check
+
+To run **unit** tests on your machine:
+
+    ./gradlew testDebugUnitTest
+    
+To run **automated** tests on connected devices:
+
+    ./gradlew connectedDebugAndroidTest
+
+Thanks
+--------
+
+Thanks to the following for contributions!
+
+[ivacf] (https://github.com/ivacf)  
+[Jawnnypoo] (https://github.com/Jawnnypoo)
+
+Attributions
+------------
+
+Thanks to the following for use of icons off of Noun Project:
+
+[Iconoci](https://thenounproject.com/iconoci)
