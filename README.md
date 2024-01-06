@@ -25,7 +25,7 @@ Certainly! Here's the information presented in Markdown format:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/username/AndroidAppGenerator.git
+   git clone https://github.com/thisizasif/AndroidAppGenerator.git
    ```
 
 2. **Navigate to the Tool Directory:**
